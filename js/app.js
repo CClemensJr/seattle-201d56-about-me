@@ -1,5 +1,6 @@
 'use strict';
 
+// This function prompts the user to enter their name and returns the name to the function that calls it.
 function getName()
 {
     let userName = prompt("What is your name?");
@@ -7,6 +8,9 @@ function getName()
     return userName;
 }
 
+// This function takes a number and uses that as an index to reference a question.
+// It then prompts the user for an answer to the question
+// Once an answer is obtained, it sends the question and the answer to the verifyAnswer method
 function askQuestions(question)
 {
     let myQuestions = ['What branch of the military did I serve in?',
@@ -23,6 +27,7 @@ function askQuestions(question)
     verifyAnswer(myQuestions[question], userAnswer);
 }
 
+// This method takes a question and an answer notifies the user if their answer was correct.
 function verifyAnswer(myQuestion, userAnswer)
 {
     switch (myQuestion)
@@ -34,6 +39,9 @@ function verifyAnswer(myQuestion, userAnswer)
                 userAnswer.toUpperCase() === 'CHAIR FORCE')
             {
                 alert(`That is correct! I served 6 years in the ${ userAnswer }`);
+                console.log('The user answered correctly.');
+
+                getScore(1);
             }
             else
             {
@@ -50,10 +58,14 @@ function verifyAnswer(myQuestion, userAnswer)
                 userAnswer.toUpperCase() === 'JEET KUNE DO')
             {
                 alert("That is correct! I have studied Tae Kwan Do, Aikido, Karate, Wing Chun, and Jeet Kune Do.");
+                console.log('The user answered correctly.');
+
+                getScore(1);
             }
             else
             {
                 alert("I'm sorry, but that is incorrect. I have studied Tae Kwan Do, Aikido, Karate, Wing Chun, and Jeet Kune Do.");
+                console.log('The user answered incorrectly');
             }
 
             break;
@@ -62,10 +74,14 @@ function verifyAnswer(myQuestion, userAnswer)
             if (userAnswer.toUpperCase() === 'THE THING')
             {
                 alert(`That is correct! My favorite movie is ${ userAnswer }`);
+                console.log('The user answered correctly.');
+
+                getScore(1);
             }
             else
             {
                 alert("I'm sorry, but that is incorrect. My favorite movie is John Carpenter's The Thing.");
+                console.log('The user answered incorrectly');
             }
 
             break;
@@ -74,10 +90,14 @@ function verifyAnswer(myQuestion, userAnswer)
             if (userAnswer.toUpperCase() === 'THE LONG WALK')
             {
                 alert(`That is correct! My favorite book is ${ userAnswer }`);
+                console.log('The user answered correctly.');
+
+                getScore(1);
             }
             else
             {
                 alert("I'm sorry, but that is incorrect. My favorite book is The Long Walk by Richard Bachman.");
+                console.log('The user answered incorrectly');
             }
 
             break;
@@ -86,10 +106,14 @@ function verifyAnswer(myQuestion, userAnswer)
             if (userAnswer.toUpperCase() === 'NO MAN\'S SKY')
             {
                 alert(`That is correct! My favorite videogame is ${ userAnswer }`);
+                console.log('The user answered correctly.');
+
+                getScore(1);
             }
             else
             {
                 alert("I'm sorry, but that is incorrect. My favorite videogame is currently No Man's Sky");
+                console.log('The user answered incorrectly');
             }
 
             break;
@@ -101,4 +125,4 @@ function verifyAnswer(myQuestion, userAnswer)
     }
 }
 
-askQuestions(0);
+askQuestions(2);

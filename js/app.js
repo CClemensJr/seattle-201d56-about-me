@@ -125,4 +125,16 @@ function verifyAnswer(myQuestion, userAnswer)
     }
 }
 
+// This function takes a number and adds it to the score. It then returns the score to the function that calls it.
+function getScore(point)
+{
+    let score;
+
+    score += point;
+
+    return score;
+}
+
+
+
 askQuestions(2);

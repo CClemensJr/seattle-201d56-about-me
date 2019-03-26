@@ -40,6 +40,8 @@ function verifyAnswer(myQuestion, userAnswer)
                 alert("I'm sorry, but that is incorrect. I served in the Air Force");
             }
 
+            break;
+
         case 'What martial art have I studied?' :
             if (userAnswer.toUpperCase() === 'TAE KWAN DO' || 
                 userAnswer.toUpperCase() === 'AIKIDO' || 
@@ -53,6 +55,49 @@ function verifyAnswer(myQuestion, userAnswer)
             {
                 alert("I'm sorry, but that is incorrect. I have studied Tae Kwan Do, Aikido, Karate, Wing Chun, and Jeet Kune Do.");
             }
+
+            break;
+
+        case 'What is my favorite movie?' :
+            if (userAnswer.toUpperCase() === 'THE THING')
+            {
+                alert(`That is correct! My favorite movie is ${ userAnswer }`);
+            }
+            else
+            {
+                alert("I'm sorry, but that is incorrect. My favorite movie is John Carpenter's The Thing.");
+            }
+
+            break;
+
+        case 'What is my favorite book?' :
+            if (userAnswer.toUpperCase() === 'THE LONG WALK')
+            {
+                alert(`That is correct! My favorite book is ${ userAnswer }`);
+            }
+            else
+            {
+                alert("I'm sorry, but that is incorrect. My favorite book is The Long Walk by Richard Bachman.");
+            }
+
+            break;
+
+        case 'What is my favorite video game?' :
+            if (userAnswer.toUpperCase() === 'NO MAN\'S SKY')
+            {
+                alert(`That is correct! My favorite videogame is ${ userAnswer }`);
+            }
+            else
+            {
+                alert("I'm sorry, but that is incorrect. My favorite videogame is currently No Man's Sky");
+            }
+
+            break;
+
+        default :
+            console.log("A question was not successfully loaded");
+
+            break;
     }
 }
 

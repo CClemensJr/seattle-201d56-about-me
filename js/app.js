@@ -1,5 +1,7 @@
 'use strict';
 
+let totalScore = 0;
+
 // This function prompts the user to enter their name and returns the name to the function that calls it.
 function getName()
 {
@@ -128,13 +130,24 @@ function verifyAnswer(myQuestion, userAnswer)
 // This function takes a number and adds it to the score. It then returns the score to the function that calls it.
 function getScore(point)
 {
-    let score;
+    totalScore += point;
 
-    score += point;
-
-    return score;
+    console.log(`In getScore(). totalScore = ${ totalScore }`);
 }
 
+// This method is the main method that calls the other methods.
+function main()
+{
+    let name = getName();
 
+    for (let i = 0; i < 5; i++)
+    {
+        askQuestions(i);
+    }
 
-askQuestions(2);
+    console.log(`The user got ${ totalScore } out of 5 correct.`);
+
+    alert(`Thank you for completing this questionnaire, ${ name }. You got ${ totalScore } out of 5 correct.` );
+}
+
+main();

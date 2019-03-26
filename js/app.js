@@ -9,13 +9,13 @@ function getName()
 
 function askQuestions(question)
 {
-    let questions = ['What branch of the military did I serve in?',
-                     'What martial art have I studied?',
-                     'What is my favorite movie?',
-                     'What is my favorite book?',
-                     'What is my favorite video game?'];
+    let myQuestions = ['What branch of the military did I serve in?',
+                       'What martial art have I studied?',
+                       'What is my favorite movie?',
+                       'What is my favorite book?',
+                       'What is my favorite video game?'];
     
-    
+    let userAnswer = prompt(`${ myQuestions[question] }`);
 }
 
-getName();
+askQuestions(0);

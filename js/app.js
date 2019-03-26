@@ -1,14 +1,153 @@
 'use strict';
 
-// As a student, I want to create an About Me page as a demonstration of my skills with HTML.
-// As an eventual jobseeker, I want to get practice in creating a portfolio page so that I can make myself appealing to potential employers.
-// As an eventual jobseeker, I would like for potential employers to quickly learn a few things about me, such as a short bio, my education, an overview of my job experience, and my goals.
-// As a fun-loving human being, I want to give the visitors to my About Me page a guessing game that shows how fun-loving and interesting I am, and maybe include things about myself that would not ordinarily appear in a portfolio page.
-// As a developer, I want to use markup to structure my index.html page, so the layout is in the order of assembly I prefer, with effective use of the markup possibilities offered by HTML.
-// As a developer, I want to carefully design my scripts, so I can understand how to organize and write my code to achieve my goals in interactivity.
-// As a developer, I want to create a simple script for my index.html page using JavaScript, so that I can use the browser to send a response to the user.
-// As a developer, I want to receive and use the user’s name, so that the program is personalized to their experience.
-// As a developer, I want to provide five questions to the user, so that they can guess the answers and get to know me.
-// As a developer, I want to notify the user after each question, so they are aware whether they were correct or not in their answers.
-// As a developer, I want to be able to debug my code by using well structured console messages.
-// As a developer, I want to manage my code through an online version control system, so I have the ability to work with others, manage my revisions, and keep a thorough record of my progress.
+let totalScore = 0;
+
+// This function prompts the user to enter their name and returns the name to the function that calls it.
+function getName()
+{
+    let userName = prompt("What is your name?");
+
+    return userName;
+}
+
+// This function takes a number and uses that as an index to reference a question.
+// It then prompts the user for an answer to the question
+// Once an answer is obtained, it sends the question and the answer to the verifyAnswer method
+function askQuestions(question)
+{
+    let myQuestions = ['What branch of the military did I serve in?',
+                       'What martial art have I studied?',
+                       'What is my favorite movie?',
+                       'What is my favorite book?',
+                       'What is my favorite video game?'];
+    
+    let userAnswer = prompt(`${ myQuestions[question] }`);
+
+    console.log(`Question: ${ myQuestions[question] }`);
+    console.log(`User Answer: ${ userAnswer }`)
+
+    verifyAnswer(myQuestions[question], userAnswer);
+}
+
+// This method takes a question and an answer notifies the user if their answer was correct.
+function verifyAnswer(myQuestion, userAnswer)
+{
+    switch (myQuestion)
+    {
+        case 'What branch of the military did I serve in?' :
+            if (userAnswer.toUpperCase() === 'USAF' || 
+                userAnswer.toUpperCase() === 'U.S. AIR FORCE' || 
+                userAnswer.toUpperCase() === 'AIR FORCE' || 
+                userAnswer.toUpperCase() === 'CHAIR FORCE')
+            {
+                alert(`That is correct! I served 6 years in the ${ userAnswer }`);
+                console.log('The user answered correctly.');
+
+                getScore(1);
+            }
+            else
+            {
+                alert("I'm sorry, but that is incorrect. I served in the Air Force");
+            }
+
+            break;
+
+        case 'What martial art have I studied?' :
+            if (userAnswer.toUpperCase() === 'TAE KWAN DO' || 
+                userAnswer.toUpperCase() === 'AIKIDO' || 
+                userAnswer.toUpperCase() === 'KARATE' || 
+                userAnswer.toUpperCase() === 'WING CHUN' ||
+                userAnswer.toUpperCase() === 'JEET KUNE DO')
+            {
+                alert("That is correct! I have studied Tae Kwan Do, Aikido, Karate, Wing Chun, and Jeet Kune Do.");
+                console.log('The user answered correctly.');
+
+                getScore(1);
+            }
+            else
+            {
+                alert("I'm sorry, but that is incorrect. I have studied Tae Kwan Do, Aikido, Karate, Wing Chun, and Jeet Kune Do.");
+                console.log('The user answered incorrectly');
+            }
+
+            break;
+
+        case 'What is my favorite movie?' :
+            if (userAnswer.toUpperCase() === 'THE THING')
+            {
+                alert(`That is correct! My favorite movie is ${ userAnswer }`);
+                console.log('The user answered correctly.');
+
+                getScore(1);
+            }
+            else
+            {
+                alert("I'm sorry, but that is incorrect. My favorite movie is John Carpenter's The Thing.");
+                console.log('The user answered incorrectly');
+            }
+
+            break;
+
+        case 'What is my favorite book?' :
+            if (userAnswer.toUpperCase() === 'THE LONG WALK')
+            {
+                alert(`That is correct! My favorite book is ${ userAnswer }`);
+                console.log('The user answered correctly.');
+
+                getScore(1);
+            }
+            else
+            {
+                alert("I'm sorry, but that is incorrect. My favorite book is The Long Walk by Richard Bachman.");
+                console.log('The user answered incorrectly');
+            }
+
+            break;
+
+        case 'What is my favorite video game?' :
+            if (userAnswer.toUpperCase() === 'NO MAN\'S SKY')
+            {
+                alert(`That is correct! My favorite videogame is ${ userAnswer }`);
+                console.log('The user answered correctly.');
+
+                getScore(1);
+            }
+            else
+            {
+                alert("I'm sorry, but that is incorrect. My favorite videogame is currently No Man's Sky");
+                console.log('The user answered incorrectly');
+            }
+
+            break;
+
+        default :
+            console.log("A question was not successfully loaded");
+
+            break;
+    }
+}
+
+// This function takes a number and adds it to the score. It then returns the score to the function that calls it.
+function getScore(point)
+{
+    totalScore += point;
+
+    console.log(`In getScore(). totalScore = ${ totalScore }`);
+}
+
+// This method is the main method that calls the other methods.
+function main()
+{
+    let name = getName();
+
+    for (let i = 0; i < 5; i++)
+    {
+        askQuestions(i);
+    }
+
+    console.log(`The user got ${ totalScore } out of 5 correct.`);
+
+    alert(`Thank you for completing this questionnaire, ${ name }. You got ${ totalScore } out of 5 correct.` );
+}
+
+main();

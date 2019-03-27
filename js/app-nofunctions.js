@@ -63,90 +63,73 @@ for (let i = 0; i < trueFalseQuestions.length; i++)
 }
 
 // Ask the user a numerical guess question
-let userGuess = prompt(`${ numberGuessQuestion }`);
+let userAnswer = prompt(`${ numberGuessQuestion }`);
 
 console.log(`QUESTION 6: ${ numberGuessQuestion }`);
-console.log(`USER'S ANSWER: ${ userGuess }`);
+console.log(`USER'S ANSWER: ${ userAnswer }`);
 
-if (parseInt(userGuess) === numberGuessAnswer)
+if (parseInt(userAnswer) === numberGuessAnswer)
 {
     alert("That was correct!");
     console.log("The user answered correctly");
 
     score += 1;
+
+    console.log(`USER'S SCORE: ${ score }`);
 }
 else
 {
     for (let i = 0; i < 3; i++)
     {
-        if (parseInt(userGuess) === numberGuessAnswer)
+        if (parseInt(userAnswer) === numberGuessAnswer)
         {
             alert("That was correct!");
             console.log("The user answered correctly");
 
             score += 1;
 
+            console.log(`USER'S SCORE: ${ score }`);
+
             break;
         }
-        else if (parseInt(userGuess) > numberGuessAnswer)
+        else if (parseInt(userAnswer) > numberGuessAnswer)
         {
             alert("Your guess was too high. Guess again.");
-            userGuess = prompt(`${ numberGuessQuestion }`);
+            userAnswer = prompt(`${ numberGuessQuestion }`);
         }
-        else if (parseInt(userGuess) < numberGuessAnswer)
+        else if (parseInt(userAnswer) < numberGuessAnswer)
         {
             alert("Your guess was too low. Guess again.");
-            userGuess = prompt(`${ numberGuessQuestion }`);
+            userAnswer = prompt(`${ numberGuessQuestion }`);
         }
     }
 }
 
 // Ask the user a question with many possible answers.
-userAnswer = prompt(`${ multiAnswerQuestion }`);
-
-console.log(`QUESTION 7: ${ multiAnswerQuestion }`);
-console.log(`USER'S ANSWER: ${ userAnswer }`);
-
-for (let i = 0; i < multiAnswerOptions.length; i++)
+for (let i = 0; i < 6; i++)
 {
-    if (userAnswer.toUpperCase() === multiAnswerOptions[i])
+    let userAnswer = prompt(`${ multiAnswerQuestion }`);
+
+    console.log(`QUESTION 7: ${ multiAnswerQuestion }`);
+    console.log(`USER'S ANSWER: ${ userAnswer }`);
+    if (multiAnswerOptions[i].includes(userAnswer.toUpperCase()))
     {
         alert("That was correct!");
         console.log("The user answered correctly");
 
         score += 1;
 
+        console.log(`USER'S SCORE: ${ score }`);
+
         break;
     }
-}
-if (parseInt(userGuess) === numberGuessAnswer)
-{
-    alert("That was correct!");
-    console.log("The user answered correctly");
-}
-else
-{
-    for (let i = 0; i < 3; i++)
+    else
     {
-        if (parseInt(userGuess) === numberGuessAnswer)
-        {
-            alert("That was correct!");
-            console.log("The user answered correctly");
-
-            break;
-        }
-        else if (parseInt(userGuess) > numberGuessAnswer)
-        {
-            alert("Your guess was too high. Guess again.");
-            userGuess = prompt(`${ numberGuessQuestion }`);
-        }
-        else if (parseInt(userGuess) < numberGuessAnswer)
-        {
-            alert("Your guess was too low. Guess again.");
-            userGuess = prompt(`${ numberGuessQuestion }`);
-        }
+        alert("I'm sorry, that was incorrect. Please try again.");
+        console.log("The user answered incorrectly");
     }
 }
+
 
 // Give the user their score
 alert(`Thank you ${ userName } for taking the time to learn more about me. You answered ${ score } out of ${ totalQuestions } questions correctly!`);

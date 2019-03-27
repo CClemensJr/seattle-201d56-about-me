@@ -11,7 +11,7 @@
         z-index: 10000;
     }
 
-    #header nav h1 {
+    #header h1 {
         cursor: default;
         height: 3em;
         left: 1em;
@@ -20,7 +20,7 @@
         top: 0;
     }
 
-    #header nav h1 a {
+    #header h1 a {
         font-size: 1.25em;
     }
 

@@ -72,6 +72,57 @@ if (parseInt(userGuess) === numberGuessAnswer)
 {
     alert("That was correct!");
     console.log("The user answered correctly");
+
+    score += 1;
+}
+else
+{
+    for (let i = 0; i < 3; i++)
+    {
+        if (parseInt(userGuess) === numberGuessAnswer)
+        {
+            alert("That was correct!");
+            console.log("The user answered correctly");
+
+            score += 1;
+
+            break;
+        }
+        else if (parseInt(userGuess) > numberGuessAnswer)
+        {
+            alert("Your guess was too high. Guess again.");
+            userGuess = prompt(`${ numberGuessQuestion }`);
+        }
+        else if (parseInt(userGuess) < numberGuessAnswer)
+        {
+            alert("Your guess was too low. Guess again.");
+            userGuess = prompt(`${ numberGuessQuestion }`);
+        }
+    }
+}
+
+// Ask the user a question with many possible answers.
+userAnswer = prompt(`${ multiAnswerQuestion }`);
+
+console.log(`QUESTION 7: ${ multiAnswerQuestion }`);
+console.log(`USER'S ANSWER: ${ userAnswer }`);
+
+for (let i = 0; i < multiAnswerOptions.length; i++)
+{
+    if (userAnswer.toUpperCase() === multiAnswerOptions[i])
+    {
+        alert("That was correct!");
+        console.log("The user answered correctly");
+
+        score += 1;
+
+        break;
+    }
+}
+if (parseInt(userGuess) === numberGuessAnswer)
+{
+    alert("That was correct!");
+    console.log("The user answered correctly");
 }
 else
 {

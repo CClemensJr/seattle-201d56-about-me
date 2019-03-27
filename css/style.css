@@ -88,10 +88,22 @@
             color: whitesmoke;
             font-size: 60px;
             font-size: 6vw;
-            left: 3em;
+            left: 2em;
             position: absolute;
             text-transform: lowercase;
             top: 3em;
             -webkit-text-stroke-color: black;
             -webkit-text-stroke-width: 0.01em;
+        }
+
+        #home h2 {
+            color: whitesmoke;
+            font-size: 30px;
+            font-size: 3vw;
+            left: 10em;
+            position: absolute;
+            text-transform: lowercase;
+            top: 9em;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 0.02em;
         }

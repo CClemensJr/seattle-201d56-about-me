@@ -27,18 +27,26 @@ for (let i = 0; i < trueFalseQuestions.length; i++)
 {
     let userAnswer = prompt(`${ trueFalseQuestions[i] }`);
 
+    console.log(`QUESTION ${ i + 1 }: ${ trueFalseQuestions[i] }`);
+    console.log(`USER'S ANSWER: ${ userAnswer }`);
+
     if (userAnswer.toUpperCase() === trueFalseAnswers[i])
     {
         alert("That is correct!");
+
+        console.log("The user answered correctly");
 
         score += 1;
     }
     else
     {
-        alert("I'm sorry, that was incorrect.")
+        alert("I'm sorry, that was incorrect.");
+        console.log("The user answered incorrectly");
     }
 
-    console.log(`QUESTION ${ i + 1 }: ${ trueFalseQuestions[i] }`);
-    console.log(`USER'S ANSWER: ${ userAnswer }`);
+    
     console.log(`USER'S SCORE: ${ score }`);
 }
+
+// Give the user their score
+alert(`Thank you ${ userName } for taking the time to learn more about me. You scored a ${ (score / trueFalseAnswers.length) * 100 }%!`);

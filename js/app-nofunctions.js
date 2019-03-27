@@ -59,7 +59,7 @@ for (let i = 0; i < trueFalseQuestions.length; i++)
 // Ask the user a numerical guess question
 let userGuess = prompt(`${ numberGuessQuestion }`);
 
-console.log(`QUESTION 7: ${ numberGuessQuestion }`);
+console.log(`QUESTION 6: ${ numberGuessQuestion }`);
 console.log(`USER'S ANSWER: ${ userGuess }`);
 
 if (parseInt(userGuess) === numberGuessAnswer)
@@ -71,9 +71,21 @@ else
 {
     for (let i = 0; i < 3; i++)
     {
-        if (parseInt(userGuess) > numberGuessAnswer)
+        if (parseInt(userGuess) === numberGuessAnswer)
+        {
+            alert("That was correct!");
+            console.log("The user answered correctly");
+
+            break;
+        }
+        else if (parseInt(userGuess) > numberGuessAnswer)
         {
             alert("Your guess was too high. Guess again.");
+            userGuess = prompt(`${ numberGuessQuestion }`);
+        }
+        else if (parseInt(userGuess) < numberGuessAnswer)
+        {
+            alert("Your guess was too low. Guess again.");
             userGuess = prompt(`${ numberGuessQuestion }`);
         }
     }

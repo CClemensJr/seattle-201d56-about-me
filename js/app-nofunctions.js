@@ -9,9 +9,14 @@ let trueFalseQuestions = ["Did I serve in the military?",
                           "Do I play an instrument?",
                           "Have I written a novel?",
                           "Am I afraid of failure?"];
+// Numerical Guess Question
+let numberGuessQuestion = "How many novels have I written?";
 
 // True or False Answers
 let trueFalseAnswers = ["YES", "YES", "YES", "YES", "NO"];
+
+// Numerical Guess Answer
+let numberGuessAnswer = 3;
 
 // Get the user's name
 let userName = prompt("What is your name?");
@@ -22,7 +27,7 @@ while(userName === null)
 
 console.log(`USERNAME: ${ userName }`);
 
-// Ask the user questions
+// Ask the user yes or no questions
 for (let i = 0; i < trueFalseQuestions.length; i++)
 {
     let userAnswer = prompt(`${ trueFalseQuestions[i] }`);
@@ -47,6 +52,9 @@ for (let i = 0; i < trueFalseQuestions.length; i++)
     
     console.log(`USER'S SCORE: ${ score }`);
 }
+
+// Ask the user a numerical guess question
+
 
 // Give the user their score
 alert(`Thank you ${ userName } for taking the time to learn more about me. You answered ${ score } out of ${ trueFalseAnswers.length } questions correctly!`);

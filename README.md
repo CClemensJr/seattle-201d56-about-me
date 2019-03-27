@@ -3,8 +3,6 @@
 # about charles clemens
 > **the** profile page for everything charles clemens!
 
-![alt text](https://github.com/CClemensJr/seattle-201d56-about-me/blob/master/img/martial-art.png "Martial Artist")
-
 ## table of contents
 * [purpose](#purpose)
 * [summary](#summary)

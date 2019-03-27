@@ -4,7 +4,7 @@
 let score = 0;
 
 // Question counter
-let totalQuestions = 6;
+let totalQuestions = 7;
 
 // True or False Questions
 let trueFalseQuestions = ["Did I serve in the military?",

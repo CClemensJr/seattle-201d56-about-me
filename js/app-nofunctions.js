@@ -33,6 +33,10 @@ for (let i = 0; i < trueFalseQuestions.length; i++)
 
         score += 1;
     }
+    else
+    {
+        alert("I'm sorry, that was incorrect.")
+    }
 
     console.log(`QUESTION ${ i + 1 }: ${ trueFalseQuestions[i] }`);
     console.log(`USER'S ANSWER: ${ userAnswer }`);

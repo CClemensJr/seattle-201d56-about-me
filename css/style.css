@@ -1,0 +1,78 @@
+/*
+    Shout out to HTML5 UP | html5up.net | @ajlkn for broadening my navbar horizons
+*/
+
+/* Nav Styling */
+    #header {
+        background: rgba(0, 0, 0, 0.589);
+        box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+        height: 3em;
+        left: 0;
+        line-height: 3em;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10000;
+    }
+
+    #header h1 {
+        cursor: default;
+        height: 3em;
+        left: 3em;
+        line-height: 3em;
+        position: absolute;
+        top: 0;
+    }
+
+    #header h1 a {
+        color: lightblue;
+        font-size: 1.25em;
+        text-decoration: none;
+    }
+
+    #header nav {
+        height: 3em;
+        line-height: 3em;
+        position: absolute;
+        right: 3em;
+        top: 0;
+    }
+
+    #header nav ul {
+        margin: 0;
+    }
+
+    #header nav ul li {
+        display: inline-block;
+        font-size: 0.9em;
+        margin-left: 0.5em;
+    }
+
+    #header nav ul li a {
+        color: black;
+        display: block;
+        height: 3em;
+        line-height: 3em;
+        padding: 0 0.5em 0 0.5em;
+        outline: 0;
+        text-decoration: none;
+    }
+
+    #header nav ul li:hover {
+        background-color: lightblue;
+    }
+
+/* Main Content Styling */
+    main {
+        margin-top: 3em;
+    }
+
+    #home, #intro, #do, #am, #work, #contact {
+        border-bottom: 1em solid black;
+        height: 50em;
+        width: 100%;
+    }
+
+    #home h1, #intro h1, #do h1, #am h1, #work h1, #contact h1 {
+        margin-top: 3em;
+    }

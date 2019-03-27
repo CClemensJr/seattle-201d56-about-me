@@ -110,15 +110,20 @@
         }
 
         #home a {
-            background-color: whitesmoke;
+            background-color: black;
             border: .1em solid black;
+            border-radius: 2px;
             color: whitesmoke;
             font-size: 2vw;
-            left: 5em;
+            left: 20em;
+            padding: .25em;
             position: absolute;
             text-decoration: none;
             text-transform: lowercase;
-            top: 5em;
-            -webkit-text-stroke-color: black;
-            -webkit-text-stroke-width: 0.02em;
+            top: 18em;
+        }
+
+        #home a:hover {
+            background-color: whitesmoke;
+            color: black;
         }

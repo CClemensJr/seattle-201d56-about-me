@@ -10,16 +10,22 @@ let totalQuestions = 6;
 let trueFalseQuestions = ["Did I serve in the military?",
                           "Do I study martial arts?",
                           "Do I play an instrument?",
-                          "Have I written a novel?",
-                          "Am I afraid of failure?"];
+                          "Did I write a novel?",
+                          "Do I fear failure?"];
 // Numerical Guess Question
 let numberGuessQuestion = "How many novels have I written?";
+
+// Multi-Answer Question
+let multiAnswerQuestion = "What martial art have I studied?"
 
 // True or False Answers
 let trueFalseAnswers = ["YES", "YES", "YES", "YES", "NO"];
 
 // Numerical Guess Answer
 let numberGuessAnswer = 3;
+
+// MultiAnswer Answers
+let multiAnswerOptions = ["TAE KWAN DO", "KARATE", "AIKIDO", "WING CHUN", "JEET KUNE DO"];
 
 // Get the user's name
 let userName = prompt("What is your name?");

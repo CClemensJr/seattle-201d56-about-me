@@ -24,6 +24,8 @@
 
 ## notes
 > This site is still in progress.
+> Removed functions from my JavaScript.
+> Added 5 yes or no questions.
 
 ## versions:
 > Version 1.0  March 26, 2019

@@ -1,7 +1,7 @@
 "use strict";
 
 // Score counter
-let totalScore = 0;
+let score = 0;
 
 // True or False Questions
 let trueFalseQuestions = ["Did I serve in the military?",
@@ -27,6 +27,14 @@ for (let i = 0; i < trueFalseQuestions.length; i++)
 {
     let userAnswer = prompt(`${ trueFalseQuestions[i] }`);
 
+    if (userAnswer.toUpperCase() === trueFalseAnswers[i])
+    {
+        alert("That is correct!");
+
+        score += 1;
+    }
+
     console.log(`QUESTION ${ i + 1 }: ${ trueFalseQuestions[i] }`);
     console.log(`USER'S ANSWER: ${ userAnswer }`);
+    console.log(`USER'S SCORE: ${ score }`);
 }

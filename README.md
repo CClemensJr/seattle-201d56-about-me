@@ -1,9 +1,9 @@
-![alt text](https://github.com/clothing-color-coordinator/API/blob/master/assets/colorBar1.PNG "Colors")
+![alt text](https://github.com/clothing-color-coordinator/API/blob/master/img/martial-art.PNG "Martial Artist")
 
 # about charles clemens
 > **the** profile page for everything charles clemens!
 
-![alt text](https://github.com/clothing-color-coordinator/API/blob/master/assets/colorBar2.PNG "Colors")
+![alt text](https://github.com/clothing-color-coordinator/API/blob/master/img/martial-art.PNG "Martial Artist")
 
 ## table of contents
 * [purpose](#purpose)

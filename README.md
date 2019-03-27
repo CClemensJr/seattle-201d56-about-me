@@ -26,6 +26,7 @@
 > This site is still in progress.
 > Removed functions from my JavaScript.
 > Added 5 yes or no questions.
+> Added a "guess the number" based question.
 
 ## versions:
 > Version 1.0  March 26, 2019

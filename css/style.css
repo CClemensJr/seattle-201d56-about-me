@@ -60,5 +60,11 @@
 
 /* Main Content Styling */
     main {
-        margin-top: 4em;
+        margin-top: 3em;
+    }
+
+    #home, #intro, #do, #am, #work, #contact {
+        border-bottom: 1em solid black;
+        height: 50em;
+        width: 100%;
     }

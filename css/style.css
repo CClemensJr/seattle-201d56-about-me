@@ -14,7 +14,7 @@
     #header h1 {
         cursor: default;
         height: 3em;
-        left: 1em;
+        left: 3em;
         line-height: 3em;
         position: absolute;
         top: 0;
@@ -30,7 +30,7 @@
         height: 3em;
         line-height: 3em;
         position: absolute;
-        right: 0.5em;
+        right: 3em;
         top: 0;
     }
 

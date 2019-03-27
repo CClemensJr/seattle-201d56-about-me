@@ -54,6 +54,10 @@
         text-decoration: none;
     }
 
+    #header nav ul li:hover {
+        background-color: lightblue;
+    }
+
 /* Main Content Styling */
     main {
         margin-top: 10em;

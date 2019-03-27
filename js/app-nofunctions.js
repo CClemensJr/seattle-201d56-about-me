@@ -130,6 +130,5 @@ for (let i = 0; i < 6; i++)
     }
 }
 
-
 // Give the user their score
 alert(`Thank you ${ userName } for taking the time to learn more about me. You answered ${ score } out of ${ totalQuestions } questions correctly!`);

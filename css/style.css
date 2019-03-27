@@ -68,7 +68,7 @@
         margin-top: 3em;
     } */
 
-    #home, #intro, #do, #am, #work, #contact {
+    #home, #overview, #skills, #portfolio, #about, #contact {
         border-bottom: 1em solid black;
         height: 50em;
         width: 100%;
@@ -82,7 +82,7 @@
         #home {
             background-image: url("./../img/home-background.jpg");
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: 100%;
         }
 
         #home h1 {

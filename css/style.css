@@ -2,6 +2,7 @@
     Shout out to HTML5 UP | html5up.net | @ajlkn for broadening my navbar horizons
 */
 
+
 /* Nav Styling */
     #header {
         background: rgba(0, 0, 0, 0.589);
@@ -25,7 +26,7 @@
     }
 
     #header h1 a {
-        color: lightblue;
+        color: whitesmoke;
         font-size: 1.25em;
         text-decoration: none;
     }
@@ -49,7 +50,7 @@
     }
 
     #header nav ul li a {
-        color: black;
+        color: whitesmoke;
         display: block;
         height: 3em;
         line-height: 3em;
@@ -59,20 +60,70 @@
     }
 
     #header nav ul li:hover {
-        background-color: lightblue;
+        background-color: black;
     }
 
 /* Main Content Styling */
-    main {
+    /* main {
         margin-top: 3em;
-    }
+    } */
 
     #home, #intro, #do, #am, #work, #contact {
         border-bottom: 1em solid black;
         height: 50em;
         width: 100%;
     }
-
-    #home h1, #intro h1, #do h1, #am h1, #work h1, #contact h1 {
+    
+    /* #home h1, #intro h1, #do h1, #am h1, #work h1, #contact h1 {
         margin-top: 3em;
-    }
+    } */
+
+    /* Home Section */
+        #home {
+            background-image: url("./../img/home-background.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        #home h1 {
+            color: whitesmoke;
+            font-size: 60px;
+            font-size: 6vw;
+            left: 2em;
+            position: absolute;
+            text-transform: lowercase;
+            top: 3em;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 0.01em;
+        }
+
+        #home h2 {
+            color: whitesmoke;
+            font-size: 30px;
+            font-size: 3vw;
+            left: 10em;
+            position: absolute;
+            text-transform: lowercase;
+            top: 9em;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 0.02em;
+        }
+
+        #home a {
+            background-color: black;
+            border: .1em solid black;
+            border-radius: 2px;
+            color: whitesmoke;
+            font-size: 2vw;
+            left: 20em;
+            padding: .25em;
+            position: absolute;
+            text-decoration: none;
+            text-transform: lowercase;
+            top: 18em;
+        }
+
+        #home a:hover {
+            background-color: whitesmoke;
+            color: black;
+        }

@@ -21,7 +21,9 @@
     }
 
     #header h1 a {
+        color: lightblue;
         font-size: 1.25em;
+        text-decoration: none;
     }
 
     #header nav {

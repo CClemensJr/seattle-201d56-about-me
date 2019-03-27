@@ -81,7 +81,8 @@
     /* Home Section */
         #home {
             background-image: url("./../img/home-background.jpg");
-            background-size: contain;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         #home h1 {

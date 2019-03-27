@@ -49,4 +49,4 @@ for (let i = 0; i < trueFalseQuestions.length; i++)
 }
 
 // Give the user their score
-alert(`Thank you ${ userName } for taking the time to learn more about me. You scored a ${ (score / trueFalseAnswers.length) * 100 }%!`);
+alert(`Thank you ${ userName } for taking the time to learn more about me. You answered ${ score } out of ${ trueFalseAnswers.length } questions correctly!`);

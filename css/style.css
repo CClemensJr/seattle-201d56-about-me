@@ -82,7 +82,7 @@
         #home {
             background-image: url("./../img/home-background.jpg");
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: 100%;
         }
 
         #home h1 {

@@ -26,7 +26,7 @@
     }
 
     #header h1 a {
-        color: lightblue;
+        color: whitesmoke;
         font-size: 1.25em;
         text-decoration: none;
     }
@@ -50,7 +50,7 @@
     }
 
     #header nav ul li a {
-        color: red;
+        color: whitesmoke;
         display: block;
         height: 3em;
         line-height: 3em;
@@ -60,7 +60,7 @@
     }
 
     #header nav ul li:hover {
-        background-color: lightblue;
+        background-color: black;
     }
 
 /* Main Content Styling */
@@ -110,7 +110,15 @@
         }
 
         #home a {
+            background-color: whitesmoke;
+            border: .1em solid black;
+            color: whitesmoke;
+            font-size: 2vw;
             left: 5em;
             position: absolute;
+            text-decoration: none;
+            text-transform: lowercase;
             top: 5em;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 0.02em;
         }

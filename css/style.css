@@ -50,7 +50,7 @@
     }
 
     #header nav ul li a {
-        color: black;
+        color: red;
         display: block;
         height: 3em;
         line-height: 3em;

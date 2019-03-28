@@ -36,7 +36,9 @@ while(userName === null)
 
 console.log(`USERNAME: ${ userName }`);
 
-// Ask the user yes or no questions
+/************
+ * Ask the user yes or no questions
+ */
 for (let i = 0; i < trueFalseQuestions.length; i++)
 {
     let userAnswer = prompt(`${ trueFalseQuestions[i] }`);
@@ -62,7 +64,9 @@ for (let i = 0; i < trueFalseQuestions.length; i++)
     console.log(`USER'S SCORE: ${ score }`);
 }
 
-// Ask the user a numerical guess question
+/*****************
+ * Ask the user a numerical guess question
+ */
 let userAnswer = prompt(`${ numberGuessQuestion }`);
 
 console.log(`QUESTION 6: ${ numberGuessQuestion }`);
@@ -105,7 +109,9 @@ else
     }
 }
 
-// Ask the user a question with many possible answers.
+/*****************
+ * Ask the user a question with many possible answers.
+ */
 for (let i = 0; i < 6; i++)
 {
     let userAnswer = prompt(`${ multiAnswerQuestion }`);
@@ -130,5 +136,8 @@ for (let i = 0; i < 6; i++)
     }
 }
 
-// Give the user their score
+
+/**************
+ * Give the user their score
+ */
 alert(`Thank you ${ userName } for taking the time to learn more about me. You answered ${ score } out of ${ totalQuestions } questions correctly!`);

@@ -37,11 +37,14 @@
 
 > Added am ordered list with skills.
 
+> Moved functionality to separate functions with xia(driver)
 ## versions:
 > Version 1.0  March 26, 2019
 
 ## author
 > **Charles Clemens** - *Initial work* - [CClemensJr](https://github.com/CClemensJr)
+
+> **Xia Liu** - *Driver for lab04* - [xialiu1988](https://github.com/xialiu1988/)
 
 ## license
 > This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

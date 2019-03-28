@@ -24,11 +24,17 @@
 
 ## notes
 > This site is still in progress.
+
 > Removed functions from my JavaScript.
+
 > Added 5 yes or no questions.
+
 > Added a "guess the number" based question.
+
 > Added a question with multiple potential answers.
+
 > Added an unordered list with work experience.
+
 > Added am ordered list with skills.
 
 ## versions:

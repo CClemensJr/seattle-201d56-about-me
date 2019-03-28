@@ -27,7 +27,9 @@ let numberGuessAnswer = 3;
 // MultiAnswer Answers
 let multiAnswerOptions = ["TAE KWAN DO", "KARATE", "AIKIDO", "WING CHUN", "JEET KUNE DO"];
 
-// Get the user's name
+/**************
+ *  Get the user's name
+ */
 let userName = prompt("What is your name?");
 while(userName === null)
 {

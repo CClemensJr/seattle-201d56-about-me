@@ -16,6 +16,7 @@ button.addEventListener("click", event => {
                               "Do I play an instrument?",
                               "Did I write a novel?",
                               "Do I fear failure?"];
+
     // Numerical Guess Question
     let numberGuessQuestion = "How many novels have I written?";
     
@@ -124,7 +125,7 @@ button.addEventListener("click", event => {
     
         console.log(`QUESTION 7: ${ multiAnswerQuestion }`);
         console.log(`USER'S ANSWER: ${ userAnswer }`);
-        if (multiAnswerOptions[i].includes(userAnswer.toUpperCase()))
+        if (multiAnswerOptions.includes(userAnswer.toUpperCase()))
         {
             alert("That was correct!");
             console.log("The user answered correctly");

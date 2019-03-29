@@ -107,13 +107,18 @@
 
         #home .firstLetter {
             color: #E58F65;
-            font-family: 'Germania One', cursive;
+            /* font-family: 'Germania One', cursive; */
         }
 
         #home .myName {
             color: #D05353;
             font-family: 'Mrs Sheppards', cursive;
             text-transform: uppercase;
+        }
+
+        #home .importantWord {
+            color: #D05353;
+            font-family: 'Germania One', cursive;
         }
 
         #home a {

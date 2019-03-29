@@ -33,6 +33,11 @@
         text-decoration: none;
     }
 
+    #header h1 a span:last-of-type {
+        color: #D05353;
+        /* padding-left: -.5em; */
+    }
+
     #header nav {
         height: 3em;
         line-height: 3em;

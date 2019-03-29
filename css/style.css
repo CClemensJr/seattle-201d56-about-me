@@ -26,10 +26,8 @@
         top: 0;
     }
 
-
-
     #header h1 a {
-        color: whitesmoke;
+        color: #F1E8B8;
         font-family: 'Mrs Sheppards', cursive;
         font-size: 2em;
         text-decoration: none;
@@ -54,8 +52,9 @@
     }
 
     #header nav ul li a {
-        color: whitesmoke;
+        color: #F1E8B8;
         display: block;
+        font-family: 'Open Sans Condensed', sans-serif;
         height: 3em;
         line-height: 3em;
         padding: 0 0.5em 0 0.5em;

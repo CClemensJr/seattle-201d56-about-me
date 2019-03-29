@@ -89,7 +89,7 @@
             left: 2em;
             position: absolute;
             text-transform: lowercase;
-            top: 3em;
+            top: 2em;
             -webkit-text-stroke-color: black;
             -webkit-text-stroke-width: 0.01em;
         }
@@ -100,14 +100,13 @@
             left: 10em;
             position: absolute;
             text-transform: lowercase;
-            top: 9em;
+            top: 10em;
             -webkit-text-stroke-color: black;
             -webkit-text-stroke-width: 0.02em;
         }
 
         #home .firstLetter {
             color: #E58F65;
-            /* font-family: 'Germania One', cursive; */
         }
 
         #home .myName {
@@ -127,12 +126,12 @@
             border-radius: 2px;
             color: #F9E784;
             font-size: 2vw;
-            left: 20em;
+            left: 21em;
             padding: .25em;
             position: absolute;
             text-decoration: none;
             text-transform: lowercase;
-            top: 18em;
+            top: 22em;
         }
 
         #home a:hover {

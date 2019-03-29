@@ -97,7 +97,7 @@
         #home h2 {
             font-size: 30px;
             font-size: 3vw;
-            left: 10em;
+            left: 8em;
             position: absolute;
             text-transform: lowercase;
             top: 10em;
@@ -121,12 +121,12 @@
         }
 
         #home a {
-            background-color: black;
-            border: .1em solid black;
+            background-color: #D05353;
+            border: .1em solid #E58F65;
             border-radius: 2px;
             color: #F9E784;
             font-size: 2vw;
-            left: 21em;
+            left: 20em;
             padding: .25em;
             position: absolute;
             text-decoration: none;
@@ -135,6 +135,7 @@
         }
 
         #home a:hover {
-            background-color: whitesmoke;
-            color: black;
+            background-color: #191919;
+            border-color: #D05353;
+            color: #E58F65;
         }

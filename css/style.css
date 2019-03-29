@@ -87,7 +87,7 @@
         } */
         #home {
             background-color: #191919;
-            color: #D05353;
+            color: #F9E784;
             font-family: 'Open Sans Condensed', sans-serif;
         }
 
@@ -115,6 +115,9 @@
 
         #home .firstLetter {
             
+            /* color: #D05353; */
+            color: #E58F65;
+            font-family: 'Germania One', cursive;
         }
 
         #home a {

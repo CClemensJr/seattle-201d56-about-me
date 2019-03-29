@@ -79,10 +79,13 @@
     } */
 
     /* Home Section */
-        #home {
+        /* #home {
             background-image: url("./../img/home-background.jpg");
-            background-repeat: no-repeat;
-            background-size: 100%;
+            background-repeat: re
+            background-size: cover;
+        } */
+        #home {
+            background-color: #191919;
         }
 
         #home h1 {

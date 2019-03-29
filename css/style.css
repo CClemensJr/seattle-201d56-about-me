@@ -2,6 +2,7 @@
     Shout out to HTML5 UP | html5up.net | @ajlkn for broadening my navbar horizons
 */
 
+@import url('https://fonts.googleapis.com/css?family=Germania+One|Open+Sans+Condensed:300');
 
 /* Nav Styling */
     #header {
@@ -86,10 +87,11 @@
         } */
         #home {
             background-color: #191919;
+            color: #D05353;
+            font-family: 'Open Sans Condensed', sans-serif;
         }
 
         #home h1 {
-            color: whitesmoke;
             font-size: 60px;
             font-size: 6vw;
             left: 2em;
@@ -101,7 +103,6 @@
         }
 
         #home h2 {
-            color: whitesmoke;
             font-size: 30px;
             font-size: 3vw;
             left: 10em;
@@ -110,6 +111,10 @@
             top: 9em;
             -webkit-text-stroke-color: black;
             -webkit-text-stroke-width: 0.02em;
+        }
+
+        #home .firstLetter {
+            
         }
 
         #home a {

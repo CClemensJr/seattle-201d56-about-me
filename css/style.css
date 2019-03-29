@@ -26,9 +26,12 @@
         top: 0;
     }
 
+
+
     #header h1 a {
         color: whitesmoke;
-        font-size: 1.25em;
+        font-family: 'Mrs Sheppards', cursive;
+        font-size: 2em;
         text-decoration: none;
     }
 

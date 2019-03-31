@@ -54,6 +54,7 @@
         display: inline-block;
         font-size: 0.9em;
         margin-left: 0.5em;
+        text-transform: lowercase;
     }
 
     #header nav ul li a {

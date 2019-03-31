@@ -74,6 +74,7 @@
 
 /* Main Content Styling */
     #home, #overview, #skills, #portfolio, #about, #contact {
+        background-color: #191919;
         border-bottom: 1em solid black;
         height: 50em;
         width: 100%;
@@ -81,7 +82,6 @@
 
     /* Home Section */
         #home {
-            background-color: #191919;
             color: #F9E784;
             font-family: 'Open Sans Condensed', sans-serif;
         }

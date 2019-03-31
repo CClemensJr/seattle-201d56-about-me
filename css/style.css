@@ -69,6 +69,7 @@
 
     #header nav ul li:hover {
         background-color: black;
+        border-bottom: 2px solid #D05353;
     }
 
 /* Main Content Styling */
@@ -79,11 +80,6 @@
     }
 
     /* Home Section */
-        /* #home {
-            background-image: url("./../img/home-background.jpg");
-            background-repeat: re
-            background-size: cover;
-        } */
         #home {
             background-color: #191919;
             color: #F9E784;

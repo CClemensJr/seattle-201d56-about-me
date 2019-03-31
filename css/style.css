@@ -27,9 +27,15 @@
     }
 
     #header h1 a {
-        color: whitesmoke;
-        font-size: 1.25em;
+        color: #F1E8B8;
+        font-family: 'Mrs Sheppards', cursive;
+        font-size: 2em;
         text-decoration: none;
+    }
+
+    #header h1 a span:last-of-type {
+        color: #D05353;
+        /* padding-left: -.5em; */
     }
 
     #header nav {
@@ -51,8 +57,9 @@
     }
 
     #header nav ul li a {
-        color: whitesmoke;
+        color: #F1E8B8;
         display: block;
+        font-family: 'Open Sans Condensed', sans-serif;
         height: 3em;
         line-height: 3em;
         padding: 0 0.5em 0 0.5em;
@@ -62,6 +69,7 @@
 
     #header nav ul li:hover {
         background-color: black;
+        border-bottom: 2px solid #D05353;
     }
 
 /* Main Content Styling */
@@ -72,11 +80,6 @@
     }
 
     /* Home Section */
-        /* #home {
-            background-image: url("./../img/home-background.jpg");
-            background-repeat: re
-            background-size: cover;
-        } */
         #home {
             background-color: #191919;
             color: #F9E784;

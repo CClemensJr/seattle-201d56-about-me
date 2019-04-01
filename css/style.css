@@ -35,7 +35,6 @@
 
     #header h1 a span:last-of-type {
         color: #D05353;
-        /* padding-left: -.5em; */
     }
 
     #header nav {
@@ -54,6 +53,7 @@
         display: inline-block;
         font-size: 0.9em;
         margin-left: 0.5em;
+        text-transform: lowercase;
     }
 
     #header nav ul li a {
@@ -74,16 +74,27 @@
 
 /* Main Content Styling */
     #home, #overview, #skills, #portfolio, #about, #contact {
+        background-color: #191919;
         border-bottom: 1em solid black;
+        font-family: 'Open Sans Condensed', sans-serif;
         height: 50em;
+        width: 100%;
+    }
+
+    #overview h1, #skills h1, #portfolio h1, #about h1, #contact h1 {
+        color: #F9E784; 
+        font-family: 'Germania One', cursive;
+        font-size: 30px;
+        font-size: 3vw;
+        padding-top: 3em;
+        text-align: center;
+        text-transform: lowercase;
         width: 100%;
     }
 
     /* Home Section */
         #home {
-            background-color: #191919;
-            color: #F9E784;
-            font-family: 'Open Sans Condensed', sans-serif;
+            color: #F9E784; 
         }
 
         #home h1 {
@@ -142,3 +153,67 @@
             border-color: #D05353;
             color: #E58F65;
         }
+
+
+    /* Overview Section */
+        #overview article {
+            background-color: #E58F65;
+            height: 35em;
+            margin-left: 25%;
+            margin-right: 25%;
+            width: 50%;
+        }
+
+
+
+        
+    /* Skills Section */
+        #skills article {
+            background-color: #E58F65;
+            height: 35em;
+            margin-left: 25%;
+            margin-right: 25%;
+            width: 50%;
+        }
+
+
+    /* Portfolio Section */
+        #portfolio article {
+            background-color: #E58F65;
+            height: 35em;
+            margin-left: 25%;
+            margin-right: 25%;
+            width: 50%;
+        }
+
+
+
+    /* About Section */
+        #about article {
+            background-color: #E58F65;
+            height: 35em;
+            margin-left: 25%;
+            margin-right: 25%;
+            width: 50%;
+        }
+
+    /* Contact Section */
+        #contact article {
+            background-color: #E58F65;
+            height: 35em;
+            margin-left: 25%;
+            margin-right: 25%;
+            width: 50%;
+        }
+
+    /* Footer */
+    footer {
+        background: #F1E8B8;
+        height: 3em;
+        line-height: 3em;
+        text-align: center;
+    }
+
+    footer ul li {
+        display: inline-block;
+    }

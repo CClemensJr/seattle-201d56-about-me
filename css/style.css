@@ -207,3 +207,13 @@
         }
 
     /* Footer */
+    footer {
+        background: #F1E8B8;
+        height: 3em;
+        line-height: 3em;
+        text-align: center;
+    }
+
+    footer ul li {
+        display: inline-block;
+    }

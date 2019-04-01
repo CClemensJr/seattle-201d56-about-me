@@ -167,7 +167,6 @@
 
 
         
-
     /* Skills Section */
         #skills article {
             background-color: #E58F65;
@@ -179,7 +178,13 @@
 
 
     /* Portfolio Section */
-
+        #portfolio article {
+            background-color: #E58F65;
+            height: 35em;
+            margin-left: 25%;
+            margin-right: 25%;
+            width: 50%;
+        }
 
 
     /* About Section */
